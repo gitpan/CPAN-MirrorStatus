@@ -1,12 +1,19 @@
-use 5.008008;
+
+use strict;
+use warnings;
+
 use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
+
 WriteMakefile(
-    NAME              => 'CPAN::MirrorStatus',
-    VERSION_FROM      => 'lib/CPAN/MirrorStatus.pm', # finds $VERSION
-    PREREQ_PM         => {}, # e.g., Module::Name => 1.1
-    ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM  => 'lib/CPAN/MirrorStatus.pm', # retrieve abstract from module
-       AUTHOR         => '許 家瑋 <shelling@apple.com>') : ()),
+  DISTNAME  => 'CPAN-MirrorStatus',
+  NAME      => 'CPAN::MirrorStatus',
+  AUTHOR    => 'shelling\ \<shelling\@cpan\.org\>',
+  ABSTRACT  => 'query mirrors status from mirrors.cpan.org',
+  VERSION   => '0.02_01',
+  EXE_FILES => [ qw() ],
+  (eval { ExtUtils::MakeMaker->VERSION(6.21) } ? (LICENSE => 'mit') : ()),
+  PREREQ_PM    => {
+    "self" => '0',
+    "Rubyish::Attribute" => '0',
+  },
 );

@@ -1,7 +1,9 @@
 Changes
-Makefile.PL
+LICENSE
 MANIFEST
+MANIFEST.SKIP
+META.yml
+Makefile.PL
 README
-t/CPAN-MirrorStatus.t
 lib/CPAN/MirrorStatus.pm
-META.yml                                 Module meta-data (added by MakeMaker)
+t/00-load.t

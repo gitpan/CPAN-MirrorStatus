@@ -1,19 +1,11 @@
---- #YAML:1.0
-name:               CPAN-MirrorStatus
-version:            0.01
-abstract:           Perl extension for blah blah blah
-author:
-    - 許 家瑋 <shelling@apple.com>
-license:            unknown
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
-requires:  {}
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.48
-meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+--- 
+abstract: query mirrors status from mirrors.cpan.org
+author: 
+  - shelling <shelling@cpan.org>
+generated_by: Dist::Zilla::Plugin::MetaYaml version 1.004
+license: mit
+name: CPAN-MirrorStatus
+requires: 
+  Rubyish::Attribute: 0
+  self: 0
+version: 0.02_01
